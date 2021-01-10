@@ -1,0 +1,146 @@
+html {
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+    font-family: 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: darkcyan;
+    font-size: 2em;
+}
+
+#main {
+    width: 80%;
+    margin: 50px auto;
+    padding: 50px;
+    box-shadow: 0 0 30px 5px;
+    background-color: beige;
+}
+
+@media (max-width: 640px) {
+    #main {
+        width: 100%;
+        margin: 0;
+    }
+}
+
+img {
+    max-width: 100%;
+    margin-top: 20px;
+    display: block;
+    margin: 40px auto 10px auto;
+    box-shadow: 0 0 3px 2px gray;
+}
+
+#img-div {
+    margin-bottom: 3em;
+}
+
+#img-caption {
+    margin: 5px;
+    font-style: italic;
+}
+
+h1 {
+    margin: 0px;
+    font-size: 2.5em;
+    margin: auto;
+    padding-bottom: 30px;
+    width: 100%;
+    max-width: 1100px;
+    display: block;
+    border-bottom: olive 1px solid;
+}
+
+@media (max-width: 640px) {
+    h1 {
+        font-size: 2em;
+    }
+}
+
+h3 {
+    display: block;
+    margin-top: 3em;
+    margin-bottom: 1.5em;
+}
+
+#core-info {
+    text-align: justify;
+    width: 80%;
+    margin: 1.5em auto;
+    line-height: 1.5em;
+    font-size: 1.1em;
+}
+
+ul {
+    width: 90%;
+    max-width: 900px;
+    text-align: justify;
+    margin: 0 auto;
+}
+
+li {
+    margin: 20px 0;
+    padding-left: 10px;
+    line-height: 1.5em;
+}
+
+a {
+    color: darkcyan;
+}
+
+a:visited {
+    color: darkmagenta;
+}
+
+#films {
+    display: grid;
+    margin-bottom: 30px;
+    width: 100%;
+    max-width: 30em;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 2em);
+    grid-template-areas: 
+        "one four"
+        "two five"
+        "three six";
+}
+
+#item1 {
+    grid-area: one;
+}
+#item2 {
+    grid-area: two;
+}
+#item3 {
+    grid-area: three;
+}
+#item4 {
+    grid-area: four;
+}
+#item5 {
+    grid-area: five;
+}
+#item6 {
+    grid-area: six;
+}
+
+@media (max-width: 700px) {
+    #films {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 2em);
+        grid-template-areas: 
+            "one"
+            "two"
+            "three"
+            "four"
+            "five"
+            "six";
+    }
+}
+
+
